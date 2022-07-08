@@ -22,7 +22,7 @@ import com.excel.service.ExcelService;
 @CrossOrigin("*")
 public class ExcelController {
 
-	@Autowired
+	@Autowired	
 	private ExcelService excelService;
 
 	@PostMapping("/user/upload")

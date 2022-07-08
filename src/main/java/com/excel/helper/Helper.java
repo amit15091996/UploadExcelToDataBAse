@@ -17,6 +17,10 @@ import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class Helper {
+	
+	private Helper() {
+		
+	}
 
 	public static boolean checkFormat(MultipartFile file) {
 
