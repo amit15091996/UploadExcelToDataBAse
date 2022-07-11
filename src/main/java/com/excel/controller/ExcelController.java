@@ -33,7 +33,7 @@ public class ExcelController {
 		}
 		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("please upload excel file");
 	}
-
+ 
 	@GetMapping("/user/get")
 	public List<UserDetails> getAllUser() {
 		return this.excelService.getAllUser();
