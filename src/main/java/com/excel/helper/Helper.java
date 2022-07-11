@@ -105,7 +105,7 @@ public class Helper {
 
 			log.info("After   List : " + list.toString());
 		} catch (Exception e) {
-			new ExceptionConstant("Error");
+			throw new ExceptionConstant("Error");
 		}
 		return list;
 	}
