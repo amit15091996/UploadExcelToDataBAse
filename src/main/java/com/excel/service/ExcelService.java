@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.excel.entity.UserDetails;
+import com.excel.exception.ExceptionConstant;
 import com.excel.helper.Helper;
 import com.excel.repo.UserRepo;
 
@@ -24,7 +25,7 @@ public class ExcelService {
 			this.repo.saveAll(user);
 		} catch (IOException e) {
 
-			e.printStackTrace();
+			throw new ExceptionConstant("Error");
 		}
 
 	}

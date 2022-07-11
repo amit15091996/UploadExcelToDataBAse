@@ -12,6 +12,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.excel.entity.UserDetails;
+import com.excel.exception.ExceptionConstant;
 
 import lombok.extern.slf4j.Slf4j;
 
@@ -104,7 +105,7 @@ public class Helper {
 
 			log.info("After   List : " + list.toString());
 		} catch (Exception e) {
-			e.printStackTrace();
+			new ExceptionConstant("Error");
 		}
 		return list;
 	}
